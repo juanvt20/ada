@@ -1,0 +1,108 @@
+// ada.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int c1=0, c2=0, c3=0, c4=0, c5=0, c6=0;
+    int n , i, j;
+    cout << "valor n:" << endl;
+    cin >> n ;
+    cout << "primero: " << endl;
+    c1++;
+    for (i = 1;i <= n; i++,++c1) {
+        j = 1;c2++;
+        c3++;
+        while (j <= (2 * n)) {
+            c3++;
+            c4++;
+            if (j % 2 == 0) {
+                c4++;
+                cout << j << endl; c5++;
+            }
+            j = j + 1; c6++;
+        }
+    }
+    cout << "c1= "<<c1<< endl;
+    cout << "c2= " << c2 << endl;
+    cout << "c3= " << c3 << endl;
+    cout << "c4= " << c4 << endl;
+    cout << "c5= " << c5 << endl;
+    cout << "c6= " << c6 << endl;
+    cout << "total= " << c1 + c2 + c3 + c4 + c5 + c6<<endl;
+    ////////////////////////////////////////////////
+    c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+     j=0;
+    cout << "segundo: " << endl;
+    i = 1; c1++;
+    c2++;
+    while (i <= n) {
+        c2++;
+        j = 1; c3++;
+        c4++;
+        while (j <= i) {
+            c4++;
+            j = j + 1; c5++;
+        }
+        i = i + 1; c6++;
+    }
+    
+    cout << "c1= " << c1 << endl;
+    cout << "c2= " << c2 << endl;
+    cout << "c3= " << c3 << endl;
+    cout << "c4= " << c4 << endl;
+    cout << "c5= " << c5 << endl;
+    cout << "c6= " << c6 << endl;
+    cout << "total= " << c1 + c2 + c3 + c4 + c5 + c6<<endl;
+    /////////////////////////////////////////
+    c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+      j=0;
+    cout << "tercero: " << endl;
+    i = 1; c1++;
+    c2++;
+    while (i <= n) {
+        c2++;
+        j = 1; c3++;
+        c4++;
+        while (j <= n) {
+            c4++;
+            j = j + 1; c5++;
+        }
+        i = i * 2; c6++;
+    }
+
+    cout << "c1= " << c1 << endl;
+    cout << "c2= " << c2 << endl;
+    cout << "c3= " << c3 << endl;
+    cout << "c4= " << c4 << endl;
+    cout << "c5= " << c5 << endl;
+    cout << "c6= " << c6 << endl;
+    cout << "total= " << c1 + c2 + c3 + c4 + c5 + c6<<endl;
+    ////////////////////////////////////
+    c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+    j=0;
+    cout << "cuarto: " << endl;
+    i = 1; c1++;
+    c2++;
+    while (i <= n) {
+        c2++;
+        j = 1; c3++;
+        c4++;
+        while (j <= i) {
+            c4++;
+            j = j + 1; c5++;
+        }
+        i = i * 2; c6++;
+    }
+
+    cout << "c1= " << c1 << endl;
+    cout << "c2= " << c2 << endl;
+    cout << "c3= " << c3 << endl;
+    cout << "c4= " << c4 << endl;
+    cout << "c5= " << c5 << endl;
+    cout << "c6= " << c6 << endl;
+    cout << "total= " << c1 + c2 + c3 + c4 + c5 + c6<<endl;
+}
